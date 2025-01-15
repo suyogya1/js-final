@@ -1,0 +1,349 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url(background.jpg);
+    color: white;
+    line-height: 1.6;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.logo span {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    outline: none;
+    width: 250px; /* Fixed width */
+    font-size: medium;
+}
+
+.search-container input::placeholder {
+    color: #999;
+}
+
+.search-container button {
+    background-color: #008080;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 20px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.search-container button:hover {
+    background-color: #00adb5;
+}
+
+.search-container button.clear {
+    background-color: #008080;
+    margin-left: 5px;
+    border-radius: 15px;
+    margin-right: 20px;
+}
+
+.search-container button.clear:hover {
+    background-color: #008080;
+    color: white;
+    border-color: #008080;
+}
+
+main {
+    padding: 40px;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+main h1 {
+    font-size: 3.5em; 
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+main p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005f5f;
+}
+
+.social-icons {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column; /* Stays as a column */
+    gap: 10px;
+    z-index: 100;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5em;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #00adb5;
+}
+
+.twitter-icon {
+    background-image: url("twitter.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover; /* Or contain */
+    display: inline-block; /* Or block, depending on layout */
+}
+
+.facebook-icon {
+    background-image: url("facebook.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: inline-block; 
+}
+
+.instagram-icon {
+    background-image: url("instagram.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover; /* Or contain */
+    display: inline-block; /* Or block, depending on layout */
+}
+
+.youtube-icon {
+    background-image: url("youtube.png");
+    width: 50px;
+    height: 50px;
+    background-size: cover; /* Or contain */
+    display: inline-block; /* Or block, depending on layout */
+}
+
+.about-section h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-section p{
+    margin-bottom: 15px;
+}
+
+.team-section{
+    margin-top: 40px;
+}
+
+.team-section h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-members{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member{
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 200px;
+}
+
+.member-image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+    object-fit: cover;
+}
+
+.about-user p {
+    margin: 0; 
+    text-align: justify;
+}
+
+.member-title{
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #005f5f;
+    color: white;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+.member-title:hover{
+    transition: 0.3s ease;
+    background-color: #00adb5;
+}
+
+.member-info{
+    margin-top: 10px;
+}
+
+.member-image {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto 10px;
+    object-fit: cover;
+}
+
+.member-image.john {
+    background-image: url("pfp1.png");
+}
+
+.member-image.celina {
+    background-image: url("pfp2.png");
+}
+
+.member-image.mike {
+    background-image: url("pfp3.png");
+}
+
+main.contact-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh -80px);
+    padding: 20px;
+}
+
+.contact-section{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact-section p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-section input,
+.contact-section textarea{
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+.contact-section textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.contact-section button {
+    background-color: #008080;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section button:hover {
+    background-color: #00adb5;
+}
+
